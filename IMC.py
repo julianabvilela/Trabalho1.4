@@ -15,7 +15,7 @@ def calcular_imc():
 
         cursor = banco.cursor()
 
-        #cursor.execute("CREATE TABLE calculo (peso integer, altura integer, nome text, endereco text)")
+        cursor.execute("CREATE TABLE calculo (peso integer, altura integer, nome text, endereco text)")
 
 
         cursor.execute("INSERT INTO calculo VALUES("+str(peso)+","+str(altura)+",'"+nome+"','"+endereco+"')")
